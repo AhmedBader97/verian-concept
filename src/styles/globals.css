@@ -1,0 +1,360 @@
+@import "./tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header-h) + 16px);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  line-height: 1.5;
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: clip;
+}
+
+img,
+svg,
+canvas,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol {
+  margin: 0;
+}
+
+:where(ul[role="list"], ol[role="list"]) {
+  list-style: none;
+  padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--cobalt) 26%, transparent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---------- Type roles ---------- */
+
+.display {
+  font-family: var(--font-sans);
+  font-size: var(--step-7);
+  font-weight: 560;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  font-variation-settings: "wght" 560;
+  text-wrap: balance;
+}
+
+.h1 {
+  font-size: var(--step-6);
+  font-weight: 560;
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  text-wrap: balance;
+}
+
+.h2 {
+  font-size: var(--step-5);
+  font-weight: 560;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.h3 {
+  font-size: var(--step-4);
+  font-weight: 560;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.h4 {
+  font-size: var(--step-3);
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.012em;
+}
+
+.lede {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  line-height: 1.55;
+  font-weight: 400;
+  color: var(--ink-2);
+  max-width: 54ch;
+  text-wrap: pretty;
+}
+
+.prose {
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  line-height: 1.65;
+  color: var(--ink);
+  max-width: var(--measure-serif);
+  text-wrap: pretty;
+}
+
+.prose p + p {
+  margin-top: 1em;
+}
+
+.small {
+  font-size: var(--step--1);
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.muted {
+  color: var(--ink-2);
+}
+
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.link {
+  color: var(--cobalt-ink);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in oklab, var(--cobalt) 45%, transparent);
+  transition: text-decoration-color var(--dur-quick) var(--ease-out);
+}
+.link:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Quiet link: no underline until hover. For navigation-like lists. */
+.qlink {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size var(--dur-base) var(--ease-out);
+}
+.qlink:hover,
+.qlink:focus-visible {
+  background-size: 100% 1px;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  --btn-bg: var(--ink);
+  --btn-fg: var(--paper-raised);
+  --btn-bd: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--btn-bd);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-sans);
+  font-size: var(--step-0);
+  font-weight: 560;
+  letter-spacing: -0.005em;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color var(--dur-quick) var(--ease-out),
+    color var(--dur-quick) var(--ease-out),
+    border-color var(--dur-quick) var(--ease-out),
+    transform var(--dur-quick) var(--ease-out);
+}
+.btn:hover {
+  --btn-bg: #24303d;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn--ghost {
+  --btn-bg: transparent;
+  --btn-fg: var(--ink);
+  --btn-bd: var(--ink-3);
+}
+.btn--ghost:hover {
+  --btn-bg: color-mix(in oklab, var(--ink) 6%, transparent);
+  --btn-bd: var(--ink);
+}
+.btn--small {
+  min-height: 38px;
+  padding: 0 16px;
+  font-size: var(--step--1);
+}
+.btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- Layout ---------- */
+
+.container {
+  width: 100%;
+  max-width: calc(var(--max) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section);
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: clamp(16px, 2vw, 32px);
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 100;
+  padding: 12px 18px;
+  background: var(--ink);
+  color: var(--paper-raised);
+  border-radius: var(--r-control);
+  text-decoration: none;
+  font-weight: 560;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Opening headline waits for its reveal; a failsafe shows it regardless after 2.5s. */
+.js [data-reveal="immediate"] {
+  visibility: hidden;
+  animation: reveal-failsafe 0s linear 2.5s forwards;
+}
+@keyframes reveal-failsafe {
+  to {
+    visibility: visible;
+  }
+}
+
+/* Line-mask reveal used by <Reveal>. Content stays visible without JS. */
+.reveal-line {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.08em;
+  margin-bottom: -0.08em;
+}
+.reveal-line > span {
+  display: block;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 26px;
+  padding: 0 10px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--rule-strong);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--ink-2);
+  background: transparent;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

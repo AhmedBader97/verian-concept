@@ -1,0 +1,330 @@
+{
+  "note": "Entity-linking lexicon shared by the TypeScript engine and the Python reference. Topic names match Verian's own tags exactly. Aliases are matched as whole stemmed token sequences.",
+  "formatTags": [
+    "News",
+    "Webinar"
+  ],
+  "topics": {
+    "Behavioural & Communications": [
+      "behaviour",
+      "behavioural",
+      "behavior",
+      "behaviour change",
+      "communications",
+      "campaign",
+      "campaigns",
+      "messaging",
+      "message testing",
+      "nudge",
+      "influencers",
+      "influencer",
+      "trusted messengers"
+    ],
+    "Climate Change & Environment": [
+      "climate",
+      "climate change",
+      "environment",
+      "environmental",
+      "net zero",
+      "emissions",
+      "energy transition",
+      "sustainability"
+    ],
+    "Crime & Justice": [
+      "crime",
+      "justice",
+      "police",
+      "policing",
+      "safety",
+      "courts",
+      "victims",
+      "antisocial behaviour"
+    ],
+    "Critical Infrastructure": [
+      "infrastructure",
+      "critical infrastructure",
+      "utilities",
+      "transport",
+      "resilience of infrastructure"
+    ],
+    "Education & Employment": [
+      "education",
+      "school",
+      "schools",
+      "pupils",
+      "students",
+      "learning",
+      "skills",
+      "employment",
+      "jobs",
+      "labour market",
+      "social mobility",
+      "educational inequality"
+    ],
+    "Evidence": [
+      "survey",
+      "surveys",
+      "statistics",
+      "official statistics",
+      "measurement",
+      "data collection",
+      "fieldwork",
+      "sampling"
+    ],
+    "Gender": [
+      "gender",
+      "women",
+      "woman",
+      "female",
+      "gender equality",
+      "gender based violence",
+      "violence against women"
+    ],
+    "Policy Development & Evaluation": [
+      "evaluation",
+      "evaluations",
+      "evaluate",
+      "impact evaluation",
+      "process evaluation",
+      "pathfinder",
+      "policy design"
+    ],
+    "Political, Opinion & Electoral": [
+      "election",
+      "elections",
+      "electoral",
+      "voting",
+      "voters",
+      "polling",
+      "polls",
+      "opinion polls",
+      "public opinion",
+      "democracy",
+      "democratic"
+    ],
+    "Public Health": [
+      "health",
+      "public health",
+      "smoking",
+      "smoke free",
+      "vaping",
+      "tobacco",
+      "sexual health",
+      "wellbeing",
+      "mental health",
+      "covid",
+      "pandemic",
+      "stress"
+    ],
+    "Seldom Heard": [
+      "seldom heard",
+      "marginalised",
+      "marginalized",
+      "minorities",
+      "minority",
+      "discrimination",
+      "antisemitism",
+      "anti muslim",
+      "racism",
+      "prejudice",
+      "inclusion",
+      "hard to reach"
+    ],
+    "Social Licence": [
+      "social licence",
+      "social license",
+      "licence to operate",
+      "community acceptance",
+      "public acceptance"
+    ],
+    "Youth and Family": [
+      "youth",
+      "young people",
+      "young",
+      "children",
+      "child",
+      "childrens",
+      "family",
+      "families",
+      "teenagers",
+      "adolescents",
+      "parents",
+      "generation"
+    ],
+    "Institute for Public Impact": [
+      "institute for public impact",
+      "public impact"
+    ],
+    "Preparedness Index": [
+      "preparedness",
+      "prepared",
+      "crisis",
+      "crises",
+      "emergency",
+      "emergencies",
+      "readiness",
+      "uncertainty"
+    ],
+    "Youth Voices": [
+      "youth voices",
+      "youth voice",
+      "youth engagement",
+      "citizen engagement"
+    ],
+    "Reykjavik Index": [
+      "reykjavik",
+      "reykjavik index",
+      "women leaders",
+      "female leadership",
+      "leadership"
+    ],
+    "Eurobarometer": [
+      "eurobarometer",
+      "european commission",
+      "european union",
+      "eu",
+      "europeans",
+      "european parliament"
+    ],
+    "Britain Barometer": [
+      "britain barometer",
+      "britain",
+      "british public"
+    ],
+    "Misinformation": [
+      "misinformation",
+      "disinformation",
+      "fake news",
+      "false information"
+    ],
+    "Public Sector Reputation": [
+      "reputation",
+      "public sector reputation",
+      "trust in public services",
+      "trust in government"
+    ],
+    "Newly Arrived and Displaced People": [
+      "refugees",
+      "refugee",
+      "displaced",
+      "displacement",
+      "migrants",
+      "migration",
+      "asylum",
+      "newly arrived",
+      "ukrainians",
+      "ukrainian",
+      "ukraine"
+    ]
+  },
+  "countries": {
+    "United Kingdom": [
+      "uk",
+      "united kingdom",
+      "england",
+      "scotland",
+      "wales",
+      "britain",
+      "british",
+      "london"
+    ],
+    "Norway": [
+      "norway",
+      "norwegian",
+      "oslo"
+    ],
+    "Denmark": [
+      "denmark",
+      "danish",
+      "copenhagen"
+    ],
+    "Sweden": [
+      "sweden",
+      "swedish",
+      "stockholm"
+    ],
+    "Finland": [
+      "finland",
+      "finnish",
+      "helsinki"
+    ],
+    "Germany": [
+      "germany",
+      "german",
+      "munich",
+      "berlin"
+    ],
+    "France": [
+      "france",
+      "french",
+      "paris"
+    ],
+    "Spain": [
+      "spain",
+      "spanish",
+      "madrid",
+      "barcelona"
+    ],
+    "Netherlands": [
+      "netherlands",
+      "dutch",
+      "holland",
+      "amsterdam"
+    ],
+    "Belgium": [
+      "belgium",
+      "belgian",
+      "brussels"
+    ],
+    "Lithuania": [
+      "lithuania",
+      "lithuanian",
+      "vilnius"
+    ],
+    "Australia": [
+      "australia",
+      "australian",
+      "australians",
+      "sydney",
+      "canberra",
+      "melbourne"
+    ],
+    "New Zealand": [
+      "new zealand",
+      "nz",
+      "aotearoa",
+      "maori",
+      "wellington",
+      "auckland"
+    ],
+    "Singapore": [
+      "singapore",
+      "singaporean"
+    ],
+    "United States": [
+      "united states",
+      "usa",
+      "america",
+      "american",
+      "washington"
+    ],
+    "Ukraine": [
+      "ukraine"
+    ],
+    "Iceland": [
+      "iceland",
+      "icelandic"
+    ],
+    "Greenland": [
+      "greenland",
+      "greenlandic",
+      "nuuk"
+    ],
+    "India": [
+      "india",
+      "indian",
+      "delhi",
+      "mumbai"
+    ]
+  }
+}

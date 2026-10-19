@@ -1,0 +1,37 @@
+# Python side of the Verian concept site: the reference evidence engine, the
+# data build (python3 -m pipeline.build) and the MCP server (python3 -m mcp_server.server).
+# The website itself is the Next.js app described in package.json.
+
+[project]
+name = "verian-concept-pipeline"
+version = "1.0.0"
+description = "Reference retrieval engine, data build and MCP server for the Verian redesign concept."
+authors = [{ name = "Ahmed Bader" }]
+requires-python = ">=3.12"
+dependencies = [
+  "PyYAML>=6.0",
+  "mcp>=2.2,<3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["pipeline*", "mcp_server*"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["pipeline/tests", "mcp_server/tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+include = ["pipeline/**/*.py", "mcp_server/**/*.py"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "UP", "SIM", "I"]

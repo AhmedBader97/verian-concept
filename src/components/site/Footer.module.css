@@ -1,0 +1,86 @@
+.footer {
+  position: relative;
+  z-index: 2;
+  background: var(--paper-sunk);
+  border-top: 1px solid var(--rule);
+  padding-block: var(--space-9) var(--space-6);
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+  padding-bottom: var(--space-8);
+  border-bottom: 1px solid var(--rule);
+}
+.purpose {
+  font-size: var(--step-5);
+  font-weight: 560;
+  letter-spacing: -0.025em;
+  line-height: 1.05;
+  max-width: 14ch;
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-6);
+  padding-block: var(--space-7);
+}
+.cols ul {
+  display: grid;
+  gap: 10px;
+  font-size: 0.9375rem;
+  color: var(--ink-2);
+}
+.cols a {
+  text-decoration: none;
+}
+.head {
+  font-size: var(--step-0);
+  font-weight: 600;
+  margin-bottom: var(--space-4);
+}
+.head a {
+  text-decoration: none;
+}
+
+.base {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-6);
+  align-items: start;
+  padding-top: var(--space-5);
+  /* Room for the fixed "Unofficial concept" label, so it never covers the last lines. */
+  padding-bottom: 72px;
+  border-top: 1px solid var(--rule);
+}
+.disclaimer {
+  font-size: var(--step--1);
+  color: var(--ink-2);
+  max-width: 78ch;
+  line-height: 1.6;
+}
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}
+
+@media (max-width: 860px) {
+  .cols {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .base {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,93 @@
+/*
+  Design tokens. One source of truth for colour, type, space and motion.
+
+  Palette idea: a cool "survey paper" ground with blue-graphite ink. Three data
+  hues mark the corners of the ternary field and are used ONLY to encode data:
+  cobalt = data, viridian = technology, marigold = citizen insight.
+*/
+:root {
+  /* Ground and ink */
+  --paper: #f1f3f2;
+  --paper-raised: #fafbfa;
+  --paper-sunk: #e5e9e8;
+  --ink: #16202b;
+  --ink-2: #44505c;
+  --ink-3: #5f6a75;
+  --rule: #cdd4d6;
+  --rule-strong: #a3adb3;
+
+  /* Data hues (graphic use) and their text-safe partners */
+  --cobalt: #2d55c8;
+  --cobalt-ink: #2647ab;
+  --viridian: #12877a;
+  --viridian-ink: #0c6b60;
+  --marigold: #e09a2b;
+  --marigold-ink: #8a560a;
+
+  /* Night variant for instruments (AI Lab consoles) */
+  --night: #0f1720;
+  --night-2: #17212b;
+  --night-3: #202c38;
+  --night-rule: #2c3a47;
+  --night-ink: #e6ebee;
+  --night-ink-2: #a7b3bc;
+  --night-ink-3: #7f8d98;
+  --cobalt-night: #8aa6f2;
+  --viridian-night: #45c7b5;
+  --marigold-night: #f0b14e;
+
+  --ok: #12877a;
+  --warn: #b26b00;
+  --stop: #b3261e;
+
+  --focus: #2d55c8;
+
+  /* Type */
+  --font-sans: "Schibsted Grotesk Variable", "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Spectral", Georgia, "Times New Roman", serif;
+  --font-mono: "JetBrains Mono Variable", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* A classical scale: 14 16 18 21 24 36 48 72 96 */
+  --step--1: 0.875rem;
+  --step-0: 1rem;
+  --step-1: 1.125rem;
+  --step-2: 1.3125rem;
+  --step-3: 1.5rem;
+  --step-4: clamp(1.875rem, 1.4rem + 1.6vw, 2.25rem);
+  --step-5: clamp(2.25rem, 1.6rem + 2.4vw, 3rem);
+  --step-6: clamp(2.75rem, 1.6rem + 4.2vw, 4.5rem);
+  --step-7: clamp(3rem, 1.4rem + 6.4vw, 6rem);
+
+  --measure: 66ch;
+  --measure-serif: 70ch;
+
+  /* Space: a 4px base, named by use */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 144px;
+  --section: clamp(72px, 9vw, 144px);
+  --gutter: clamp(16px, 4vw, 56px);
+  --max: 1320px;
+
+  /* Radii have a hierarchy: controls < panels < sheets. Pills are pills. */
+  --r-control: 10px;
+  --r-panel: 18px;
+  --r-sheet: 28px;
+  --r-pill: 999px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-quick: 160ms;
+  --dur-base: 320ms;
+  --dur-slow: 720ms;
+
+  --header-h: 72px;
+}

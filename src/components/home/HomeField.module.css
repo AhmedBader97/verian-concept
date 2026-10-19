@@ -1,0 +1,19 @@
+.root {
+  position: relative;
+}
+.canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 900ms var(--ease-out);
+}
+.root[data-mode="webgl"] .canvas {
+  opacity: 1;
+}
+.root[data-mode="fallback"] .canvas {
+  display: none;
+}

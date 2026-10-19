@@ -1,0 +1,40 @@
+{
+  "tsTests": 125,
+  "pyTests": 154,
+  "e2eTests": 66,
+  "axeViolations": 0,
+  "pagesChecked": 8,
+  "lighthouse": {
+    "performance": 81,
+    "accessibility": 100,
+    "bestPractices": 96,
+    "seo": 60,
+    "page": "/"
+  },
+  "libraryItems": 201,
+  "goldQuestions": 41,
+  "bestDesign": {
+    "name": "the agentic loop",
+    "ndcg": 0.8851
+  },
+  "recommended": {
+    "name": "the agentic loop",
+    "ndcg": 0.8851
+  },
+  "parity": {
+    "same": 205,
+    "total": 205
+  },
+  "abstention": {
+    "threshold": 6.7,
+    "correct": 9,
+    "probes": 11,
+    "falseAbstentions": 0
+  },
+  "endToEnd": {
+    "declined": 11,
+    "probes": 11,
+    "falseRefusals": 0,
+    "answerable": 41
+  }
+}

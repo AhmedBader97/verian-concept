@@ -1,0 +1,132 @@
+.story {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--space-9);
+}
+
+.head {
+  max-width: min(44vw, 600px);
+  display: grid;
+  gap: var(--space-4);
+  padding-bottom: var(--space-6);
+}
+
+.steps {
+  margin: 0;
+  padding: 0;
+}
+
+.step {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+}
+.step:last-child {
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  max-width: min(42vw, 520px);
+  padding-left: 64px;
+  opacity: 0.62; /* dimmed, but still readable (AA contrast) */
+  transform: translateY(12px);
+  transition:
+    opacity 600ms var(--ease-out),
+    transform 900ms var(--ease-out);
+}
+.step[data-active="true"] .card {
+  opacity: 1;
+  transform: none;
+}
+.steps[data-mode="fallback"] .card,
+.steps[data-mode="pending"] .card {
+  opacity: 1;
+  transform: none;
+}
+
+.num {
+  position: absolute;
+  left: 0;
+  top: 0.3em;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--ink-3);
+  display: grid;
+  place-items: center;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.step[data-active="true"] .num {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-raised);
+}
+
+.card h3 {
+  margin-bottom: var(--space-4);
+}
+.body {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  line-height: 1.55;
+  color: var(--ink);
+  margin-bottom: var(--space-4);
+  text-wrap: pretty;
+}
+.legend {
+  font-size: var(--step--1);
+  color: var(--ink); /* stays AA-legible while the step is dimmed */
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--rule);
+}
+
+@media (max-width: 899px) {
+  .head {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: var(--space-5);
+    border-radius: var(--r-panel);
+    background: color-mix(in oklab, var(--paper-raised) 90%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 1px var(--rule);
+  }
+  .step {
+    align-items: flex-end;
+    padding-bottom: 7vh;
+  }
+  .card {
+    max-width: 100%;
+    padding: var(--space-5) var(--space-5) var(--space-5) 72px;
+    border-radius: var(--r-panel);
+    background: color-mix(in oklab, var(--paper-raised) 90%, transparent);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 1px var(--rule);
+  }
+  .num {
+    left: var(--space-5);
+    top: var(--space-5);
+  }
+  .body {
+    font-size: var(--step-1);
+  }
+  /* On phones the card sits over the field: keep its background solid and dim only the text. */
+  .card,
+  .step[data-active="true"] .card {
+    opacity: 1;
+  }
+  .card > * {
+    opacity: 0.62;
+    transition: opacity 600ms var(--ease-out);
+  }
+  .step[data-active="true"] .card > *,
+  .steps[data-mode="fallback"] .card > *,
+  .steps[data-mode="pending"] .card > * {
+    opacity: 1;
+  }
+}

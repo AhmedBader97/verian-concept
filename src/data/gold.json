@@ -1,0 +1,472 @@
+[
+  {
+    "id": "q-youth-preparedness",
+    "query": "What do young people think about crises and being prepared?",
+    "relevant": {
+      "understanding-what-young-people-think-about-preparedness": 2,
+      "preparedness-index": 1,
+      "understanding-public-readiness-in-an-uncertain-world": 1,
+      "almost-six-in-ten-europeans-feel-they-are-not-well-prepared-for-disasters-or-emergencies": 1
+    }
+  },
+  {
+    "id": "q-ai-attitudes",
+    "query": "How do people feel about artificial intelligence?",
+    "relevant": {
+      "understanding-australians-reactions-to-artificial-intelligence": 2,
+      "artificial-intelligence-and-the-future-of-work": 2
+    }
+  },
+  {
+    "id": "q-synthetic-sample",
+    "query": "Can AI-generated synthetic respondents replace real survey samples?",
+    "relevant": {
+      "synthetic-sample-in-social-research": 2,
+      "accelerating-research-artifical-intelligence": 1
+    }
+  },
+  {
+    "id": "q-ai-in-research",
+    "query": "How is Verian using AI and data science in its own research?",
+    "relevant": {
+      "accelerating-research-artifical-intelligence": 2,
+      "kantar-public-and-faculty-ai-collaborate-to-develop-secure-and-ethical-ai-tool": 2,
+      "verian-and-faculty-enter-into-formal-partnership": 1,
+      "synthetic-sample-in-social-research": 1,
+      "understanding-public-engagement-in-uk-cultural-life-through-new-data-driven-methods": 1,
+      "current-and-future-potential-applications-of-data-science-in-evaluation": 1
+    }
+  },
+  {
+    "id": "q-gbv-prevention",
+    "query": "What works to prevent gender-based violence?",
+    "relevant": {
+      "changing-social-norms-prevent-gender-based-violence-australia": 2,
+      "tackling-online-trends-disrespect-gender-based-violence": 2,
+      "event-a-conversation-on-gender-based-violence": 1,
+      "observing-mens-change-journeys-in-challenging-relationships": 1,
+      "exploring-how-those-who-are-harming-others-can-be-supported-to-seek-help-for-their-behaviour": 1,
+      "new-policy-insights-for-wicked-social-problems": 1,
+      "tackling-workplace-sexual-harassment-in-sweden": 1
+    }
+  },
+  {
+    "id": "q-women-leadership",
+    "query": "How do societies view women as leaders?",
+    "relevant": {
+      "the-reykjavik-index-for-leadership": 2,
+      "gender-equality-2024-downward-trend": 2,
+      "reykjavik-index-for-new-zealand": 2,
+      "perceptions-women-leadership-india-2021": 2,
+      "iceland-sets-standard-gender-progressive-society": 2,
+      "forbes-womens-political-power-faced-a-fractured-year-in-2025": 1,
+      "bbc-radio-4-womans-hour-women-leaders-dec-25": 1,
+      "event-reykjavik-global-forum": 1,
+      "new-policy-insights-for-wicked-social-problems": 1,
+      "enhancing-board-performance-through-greater-diversity-and-inclusion": 1
+    }
+  },
+  {
+    "id": "q-ukraine-return",
+    "query": "Do displaced Ukrainians plan to return home?",
+    "relevant": {
+      "voice-of-ukraine-report": 2,
+      "voice-of-ukraine": 2,
+      "humanitarian-financial-military-support-for-ukraine": 1,
+      "documenting-disruption-everyday-life-during-times-of-war": 1
+    }
+  },
+  {
+    "id": "q-childrens-social-care",
+    "query": "Evaluation of children's social care and family help reforms in England",
+    "relevant": {
+      "emerging-findings-from-the-families-first-for-children-pathfinder-evaluation": 2,
+      "evaluation-of-transformational-reforms-to-family-help-and-childrens-social-care-begins": 2,
+      "test-and-learn-programme": 1,
+      "amplifying-voices-of-care-experienced-young-people": 1
+    }
+  },
+  {
+    "id": "q-police-trust",
+    "query": "How much does the public trust the police?",
+    "relevant": {
+      "understanding-trust-safety-and-public-confidence-in-policing": 2,
+      "transforming-crime-survey-england-wales": 1
+    }
+  },
+  {
+    "id": "q-smoke-free",
+    "query": "Smoking and vaping near building entrances: what should policy do?",
+    "relevant": {
+      "understanding-community-and-business-engagement-with-smoke-free-areas-to-inform-policy": 2,
+      "smoke-free-environments-as-a-catalyst-for-change": 2
+    }
+  },
+  {
+    "id": "q-vaccination-barriers",
+    "query": "What stops people getting vaccinated in Europe?",
+    "relevant": {
+      "overcoming-obstacles-to-vaccination": 2,
+      "implementing-vaccination-policy-eu": 2,
+      "informing-the-uk-covid-19-vaccination-programme": 1,
+      "immunisation-and-handwashing-behaviour-change": 1,
+      "building-a-community-of-practice-for-prevention-of-infectious-diseases": 1
+    }
+  },
+  {
+    "id": "q-water",
+    "query": "Getting households to use less water",
+    "relevant": {
+      "changing-behaviours-conserve-water-australia": 2,
+      "reducing-water-consumption-england": 2,
+      "our-water-our-voice-sydney-water": 1
+    }
+  },
+  {
+    "id": "q-uk-election-polling",
+    "query": "How accurate was Verian's polling of the 2024 UK general election?",
+    "relevant": {
+      "uk-2024-general-election-results": 2,
+      "uk-2024-general-election-implications": 1
+    }
+  },
+  {
+    "id": "q-value-for-money",
+    "query": "How do you judge value for money in government programmes?",
+    "relevant": {
+      "guide-evaluation-value-for-money": 2,
+      "ensuring-value-for-money-public-spending": 2,
+      "webinar-ensuring-value-for-money-in-government-policy": 2,
+      "seminar-series-value-for-money-evaluation": 2,
+      "maximising-public-value-through-better-data-and-evaluation": 1
+    }
+  },
+  {
+    "id": "q-social-licence",
+    "query": "How can a government agency earn a social licence to operate?",
+    "relevant": {
+      "applying-social-license-government-agency-climate-energy-environment-water": 2,
+      "measurement-momentum-growing-social-licence": 2,
+      "understanding-public-sentiment-citizen-focused-transformation": 2
+    }
+  },
+  {
+    "id": "q-misinformation",
+    "query": "How can governments counter misinformation?",
+    "relevant": {
+      "debunk-vs-prebunk-misinformation-in-singapore-and-beyond": 2,
+      "fighting-misinformation-with-counter-narratives": 2,
+      "public-opinion-about-the-fight-against-mis-and-disinformation": 1,
+      "on-the-front-line": 1
+    }
+  },
+  {
+    "id": "q-youth-stress",
+    "query": "What helps young people cope with stress?",
+    "relevant": {
+      "young-people-stress-and-wellbeing": 2,
+      "from-insight-to-impact": 2
+    }
+  },
+  {
+    "id": "q-youth-surveys",
+    "query": "How can we get more young people to take part in surveys?",
+    "relevant": {
+      "engaging-young-people-to-improve-survey-participation": 2,
+      "why-do-young-people-skip-political-questions-in-surveys": 2,
+      "youth-voices-engaging-the-generation-shaping-tomorrow": 1
+    }
+  },
+  {
+    "id": "q-household-finances",
+    "query": "Household wealth and debt data in Spain",
+    "relevant": {
+      "survey-of-household-finances": 2,
+      "the-ninth-foessa-report": 1
+    }
+  },
+  {
+    "id": "q-longitudinal-uk",
+    "query": "Long-running longitudinal studies of UK households and young people",
+    "relevant": {
+      "understanding-society-uk-household-study": 2,
+      "longitudinal-survey-of-young-people-in-england": 2,
+      "examining-the-impacts-of-the-covid-19-pandemic-on-educational-inequality-and-social-mobility": 1,
+      "early-life-cohort-feasibility-study": 1,
+      "guide-longitudinal-survey-pilot": 1
+    }
+  },
+  {
+    "id": "q-eu-green-transition",
+    "query": "What do EU citizens think about the green transition?",
+    "relevant": {
+      "attitudes-of-citizens-in-the-eu-to-the-green-transition": 2,
+      "eu-citizens-public-funding-for-greener-economy": 2,
+      "balancing-a-fair-deal-for-farmers-and-the-consumer": 1
+    }
+  },
+  {
+    "id": "q-reputation",
+    "query": "Reputation of public sector agencies in New Zealand and Australia",
+    "relevant": {
+      "public-sector-reputation-index-nz": 2,
+      "public-sector-reputation-index-au": 2,
+      "public-and-non-profit-sector-reputation-index-2024": 1
+    }
+  },
+  {
+    "id": "q-integration",
+    "query": "Helping migrants and refugees integrate",
+    "relevant": {
+      "evaluation-of-integration-courses": 2,
+      "enhancing-immigrant-youth-integration-and-wellbeing": 2,
+      "voice-of-ukraine": 2,
+      "immigration-thinking-behind-the-numbers": 1,
+      "partnering-with-migrant-leaders": 1
+    }
+  },
+  {
+    "id": "q-young-drivers",
+    "query": "Road safety campaign for young male drivers",
+    "relevant": {
+      "unxpected-fm": 2
+    }
+  },
+  {
+    "id": "q-event-attendance",
+    "query": "Counting attendance at free events using mobile and social media data",
+    "relevant": {
+      "understanding-public-engagement-in-uk-cultural-life-through-new-data-driven-methods": 2,
+      "accelerating-research-artifical-intelligence": 1
+    }
+  },
+  {
+    "id": "q-norway-children",
+    "query": "What do children in Norway want from school and parents?",
+    "relevant": {
+      "childrens-barometer-2025": 2,
+      "understanding-what-young-people-think-about-preparedness": 1
+    }
+  },
+  {
+    "id": "q-good-evidence",
+    "query": "What makes evidence good enough for policy decisions?",
+    "relevant": {
+      "what-is-good-evidence": 2,
+      "why-evidence-informed-decision-making": 2,
+      "the-use-of-evidence-in-policy-cycle": 2,
+      "maximising-public-value-through-better-data-and-evaluation": 1
+    }
+  },
+  {
+    "id": "q-prison-drugs",
+    "query": "Drug use in prisons",
+    "relevant": {
+      "drug-use-in-prisons-in-france": 2,
+      "understanding-the-effectiveness-of-a-project-to-tackle-drug-use-in-the-uk": 1
+    }
+  },
+  {
+    "id": "q-eu-attachment",
+    "query": "How attached do Europeans feel to the EU?",
+    "relevant": {
+      "attachment-to-country-eu-and-europe": 2,
+      "what-do-eu-citizens-think-they-have-in-common": 1,
+      "values-best-represent-eu-2024": 1,
+      "trust-in-the-eu-national-parliament-and-national-government": 1
+    }
+  },
+  {
+    "id": "q-eu-trust",
+    "query": "Trust in national government and parliament across Europe",
+    "relevant": {
+      "trust-in-the-eu-national-parliament-and-national-government": 2,
+      "how-do-eu-citizens-perceive-the-independence-of-their-judicial-systems": 1,
+      "values-beliefs-and-democratic-engagement-in-europe": 1
+    }
+  },
+  {
+    "id": "q-eval-methods",
+    "query": "Evaluation methods: synthetic controls, process tracing, natural experiments",
+    "relevant": {
+      "adding-flexibility-to-impact-evaluations-with-synthetic-controls": 2,
+      "a-simple-explanation-of-process-tracing-and-a-tip-for-using-it": 2,
+      "natural-experiments": 2,
+      "adaptive-management": 1,
+      "how-behavioural-science-can-improve-evaluation": 1,
+      "what-evaluators-need-to-know-about-optimism-bias": 1,
+      "current-and-future-potential-applications-of-data-science-in-evaluation": 1,
+      "what-does-it-take-to-be-a-good-evaluator": 1
+    }
+  },
+  {
+    "id": "q-smart-meters",
+    "query": "Increasing take-up of smart energy meters",
+    "relevant": {
+      "increasing-smart-meters-uk": 2
+    }
+  },
+  {
+    "id": "m-typo-preparedness",
+    "query": "preparedniss index for citizens",
+    "relevant": {
+      "preparedness-index": 2,
+      "webinar-preparedness-in-the-era-of-uncertainty": 1,
+      "understanding-what-young-people-think-about-preparedness": 1,
+      "understanding-public-readiness-in-an-uncertain-world": 1,
+      "event-prepared-to-act-understanding-public-readiness-in-an-uncertain-world": 1,
+      "almost-six-in-ten-europeans-feel-they-are-not-well-prepared-for-disasters-or-emergencies": 1,
+      "the-preparedness-policy-dividend": 1,
+      "how-prepared-do-we-think-we-are": 1
+    },
+    "note": "messy: misspelling"
+  },
+  {
+    "id": "m-typo-vaccination",
+    "query": "vacination barriers in europe",
+    "relevant": {
+      "overcoming-obstacles-to-vaccination": 2,
+      "implementing-vaccination-policy-eu": 2,
+      "informing-the-uk-covid-19-vaccination-programme": 1,
+      "immunisation-and-handwashing-behaviour-change": 1,
+      "building-a-community-of-practice-for-prevention-of-infectious-diseases": 1
+    },
+    "note": "messy: misspelling"
+  },
+  {
+    "id": "m-typo-misinformation",
+    "query": "misinformaton and disinformaton",
+    "relevant": {
+      "debunk-vs-prebunk-misinformation-in-singapore-and-beyond": 2,
+      "fighting-misinformation-with-counter-narratives": 2,
+      "public-opinion-about-the-fight-against-mis-and-disinformation": 2,
+      "on-the-front-line": 1
+    },
+    "note": "messy: misspelling"
+  },
+  {
+    "id": "m-typo-leadership",
+    "query": "reykjavik indx on women leadrship",
+    "relevant": {
+      "the-reykjavik-index-for-leadership": 2,
+      "gender-equality-2024-downward-trend": 2,
+      "reykjavik-index-for-new-zealand": 2,
+      "perceptions-women-leadership-india-2021": 2,
+      "iceland-sets-standard-gender-progressive-society": 2,
+      "forbes-womens-political-power-faced-a-fractured-year-in-2025": 1,
+      "bbc-radio-4-womans-hour-women-leaders-dec-25": 1,
+      "event-reykjavik-global-forum": 1,
+      "new-policy-insights-for-wicked-social-problems": 1
+    },
+    "note": "messy: misspelling"
+  },
+  {
+    "id": "m-typo-smoke-free",
+    "query": "smoke-free aeras near entrances",
+    "relevant": {
+      "understanding-community-and-business-engagement-with-smoke-free-areas-to-inform-policy": 2,
+      "smoke-free-environments-as-a-catalyst-for-change": 2
+    },
+    "note": "messy: misspelling"
+  },
+  {
+    "id": "m-compare-energy",
+    "query": "Compare smart meters versus hydrogen infrastructure",
+    "relevant": {
+      "increasing-smart-meters-uk": 2,
+      "hydrogen-infrastructure-investment": 2
+    },
+    "note": "messy: comparison"
+  },
+  {
+    "id": "m-compare-trust",
+    "query": "Compare trust in the police versus trust in the EU",
+    "relevant": {
+      "understanding-trust-safety-and-public-confidence-in-policing": 2,
+      "trust-in-the-eu-national-parliament-and-national-government": 2,
+      "transforming-crime-survey-england-wales": 1,
+      "how-do-eu-citizens-perceive-the-independence-of-their-judicial-systems": 1
+    },
+    "note": "messy: comparison"
+  },
+  {
+    "id": "m-compare-misinformation",
+    "query": "Difference between debunking and prebunking misinformation",
+    "relevant": {
+      "debunk-vs-prebunk-misinformation-in-singapore-and-beyond": 2,
+      "fighting-misinformation-with-counter-narratives": 1,
+      "public-opinion-about-the-fight-against-mis-and-disinformation": 1
+    },
+    "note": "messy: comparison"
+  },
+  {
+    "id": "m-compare-youth",
+    "query": "Youth stress versus youth relationships",
+    "relevant": {
+      "young-people-stress-and-wellbeing": 2,
+      "from-insight-to-impact": 2,
+      "love-expectations-and-reality": 2,
+      "love-better": 1
+    },
+    "note": "messy: comparison"
+  },
+  {
+    "id": "u-mercury",
+    "query": "What is the boiling point of mercury?",
+    "relevant": {}
+  },
+  {
+    "id": "u-world-cup",
+    "query": "Who won the 2022 FIFA World Cup final?",
+    "relevant": {}
+  },
+  {
+    "id": "u-sourdough",
+    "query": "Give me a recipe for sourdough bread",
+    "relevant": {}
+  },
+  {
+    "id": "u-router",
+    "query": "How do I reset my wifi router password?",
+    "relevant": {}
+  },
+  {
+    "id": "u-share-price",
+    "query": "What is Nvidia's share price today?",
+    "relevant": {}
+  },
+  {
+    "id": "u-translate",
+    "query": "Translate good morning into Japanese",
+    "relevant": {}
+  },
+  {
+    "id": "u-lithuania-jobs",
+    "query": "What is the unemployment rate in Lithuania?",
+    "relevant": {}
+  },
+  {
+    "id": "u-weather-london",
+    "query": "What's the weather in London tomorrow?",
+    "relevant": {},
+    "note": "probe added after review"
+  },
+  {
+    "id": "u-airline-pilot",
+    "query": "How do I become a commercial airline pilot?",
+    "relevant": {},
+    "note": "probe added after review"
+  },
+  {
+    "id": "u-capital-australia",
+    "query": "What is the capital of Australia?",
+    "relevant": {},
+    "note": "probe added after review"
+  },
+  {
+    "id": "u-paris-restaurants",
+    "query": "Best restaurants in Paris for a date night",
+    "relevant": {},
+    "note": "probe added after review"
+  }
+]

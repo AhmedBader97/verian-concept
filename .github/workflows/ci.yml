@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install
+        run: |
+          npm ci
+          pip install "PyYAML>=6.0" "mcp>=2.2,<3" "pytest>=8"
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: TypeScript tests (engine, agent harness, parity with Python)
+        run: npm test
+
+      - name: Python tests (reference engine, pipeline, MCP server)
+        run: npm run test:py
+
+      - name: The committed data matches a fresh build
+        run: |
+          python3 -m pipeline.build
+          git diff --exit-code src/data src/engine/parity.fixtures.json
+
+      - name: Build the static site
+        run: npm run build

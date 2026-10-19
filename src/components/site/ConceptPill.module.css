@@ -1,0 +1,41 @@
+.pill {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px 8px 10px;
+  border-radius: var(--r-pill);
+  background: var(--ink);
+  color: var(--paper-raised);
+  text-decoration: none;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  box-shadow: 0 10px 30px -12px rgb(22 32 43 / 0.5);
+  transition: transform var(--dur-base) var(--ease-out);
+}
+.pill:hover {
+  transform: translateY(-2px);
+}
+.mark {
+  width: 18px;
+  height: 16px;
+  flex: none;
+}
+.text {
+  display: grid;
+}
+.lead {
+  font-weight: 600;
+}
+.by {
+  color: color-mix(in oklab, var(--paper-raised) 72%, transparent);
+}
+@media (max-width: 600px) {
+  .pill {
+    left: 12px;
+    bottom: 12px;
+  }
+}

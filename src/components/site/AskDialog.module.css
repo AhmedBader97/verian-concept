@@ -1,0 +1,68 @@
+.dialog {
+  width: min(980px, calc(100vw - 32px));
+  max-height: calc(100vh - 64px);
+  margin: 32px auto auto;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-sheet);
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow:
+    0 0 0 1px var(--rule),
+    0 40px 120px -40px rgb(15 23 32 / 0.6);
+  overflow: auto;
+}
+.dialog::backdrop {
+  background: rgb(15 23 32 / 0.42);
+  backdrop-filter: blur(4px);
+}
+.dialog[open] {
+  animation: drop var(--dur-base) var(--ease-out);
+}
+@keyframes drop {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.99);
+  }
+}
+.panel {
+  padding: var(--space-5) var(--space-6) var(--space-5);
+  display: grid;
+  gap: var(--space-4);
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-weight: 600;
+}
+.close {
+  border: 1px solid var(--rule-strong);
+  background: transparent;
+  border-radius: var(--r-pill);
+  padding: 6px 14px;
+  font-size: 0.875rem;
+}
+.hint {
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+.hint kbd {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 1px 6px;
+  border-radius: 5px;
+  border: 1px solid var(--rule-strong);
+  background: var(--paper-raised);
+}
+@media (max-width: 600px) {
+  .dialog {
+    margin-top: 12px;
+    max-height: calc(100vh - 24px);
+  }
+  .panel {
+    padding: var(--space-4);
+  }
+}

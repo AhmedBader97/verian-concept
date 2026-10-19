@@ -1,0 +1,158 @@
+{
+  "total": 201,
+  "byKind": {
+    "case-study": 86,
+    "insight": 70,
+    "news": 24,
+    "event": 9,
+    "webinar": 5,
+    "report": 7
+  },
+  "byTopic": {
+    "Policy Development & Evaluation": 45,
+    "News": 39,
+    "Behavioural & Communications": 37,
+    "Evidence": 30,
+    "Political, Opinion & Electoral": 25,
+    "Institute for Public Impact": 18,
+    "Eurobarometer": 17,
+    "Youth and Family": 14,
+    "Seldom Heard": 12,
+    "Climate Change & Environment": 11,
+    "Critical Infrastructure": 9,
+    "Gender": 8,
+    "Public Health": 8,
+    "Reykjavik Index": 7,
+    "Crime & Justice": 6,
+    "Youth Voices": 5,
+    "Britain Barometer": 3,
+    "Public Sector Reputation": 3,
+    "Social Licence": 3,
+    "Webinar": 3,
+    "Misinformation": 2,
+    "Preparedness Index": 2,
+    "Education & Employment": 1,
+    "Newly Arrived and Displaced People": 1
+  },
+  "byCountry": {
+    "Global": 106,
+    "United Kingdom": 42,
+    "Australia": 12,
+    "New Zealand": 10,
+    "Germany": 6,
+    "Singapore": 5,
+    "Netherlands": 4,
+    "Norway": 4,
+    "Spain": 3,
+    "France": 2,
+    "Iceland": 2,
+    "Denmark": 1,
+    "Finland": 1,
+    "Greenland": 1,
+    "India": 1,
+    "Sweden": 1
+  },
+  "byYear": {
+    "2026": 39,
+    "2025": 89,
+    "2024": 50,
+    "2023": 16,
+    "2022": 6,
+    "2021": 1
+  },
+  "summaryBasis": {
+    "title-only": 146,
+    "page": 38,
+    "teaser": 17
+  },
+  "titleOnlySummaries": 146,
+  "itemsWithoutTopics": {
+    "count": 24,
+    "ids": [
+      "childrens-barometer-2025",
+      "drug-use-in-prisons-in-france",
+      "enhancing-board-performance-through-greater-diversity-and-inclusion",
+      "esra-2025-conference",
+      "gavin-bain-apac-ceo",
+      "institute-public-impact-management",
+      "kantar-public-and-faculty-ai-collaborate-to-develop-secure-and-ethical-ai-tool",
+      "kantar-public-rebrands-globally-to-become-verian",
+      "mrs-award-public-policy-win-2024",
+      "mrs-awards-2024",
+      "overcoming-obstacles-to-vaccination",
+      "partnering-with-migrant-leaders",
+      "philippa-edward-joins-verian-coo",
+      "strategic-senior-appointments-across-apac-2025",
+      "synthetic-sample-in-social-research",
+      "the-ninth-foessa-report",
+      "understanding-australians-reactions-to-artificial-intelligence",
+      "verian-and-faculty-enter-into-formal-partnership",
+      "verian-appoints-melanie-wiese-as-managing-director-australia",
+      "verian-group-expands-behavioural-design-offer-across-apac",
+      "verian-to-lead-digital-transformation-accelerator-for-the-european-digital-innovation-hubs-network",
+      "voice-of-ukraine",
+      "why-do-young-people-skip-political-questions-in-surveys",
+      "youth-voices-engaging-the-generation-shaping-tomorrow"
+    ]
+  },
+  "topicsWithoutItems": [],
+  "dateRange": {
+    "first": "2021-11-09",
+    "last": "2026-10-09"
+  },
+  "warnings": [],
+  "sourceNotes": [
+    {
+      "found": "Two case-study pages tell the same story under different addresses (/case-studies/tourism-new-zealand and /case-studies/tiakicampaign).",
+      "action": "Kept one item (tourism-new-zealand) so the story is not counted or cited twice.",
+      "items": [
+        "tourism-new-zealand"
+      ]
+    },
+    {
+      "found": "The Behavioural & Communications tag page links one case study with a malformed address that repeats its path (veriangroup.com/case-studies/veriangroup.com/case-studies/reducing-water-consumption-england).",
+      "action": "Linked the item to its working address.",
+      "items": [
+        "reducing-water-consumption-england"
+      ]
+    },
+    {
+      "found": "Fourteen case studies appear only on topic tag pages, not in the main case-study listing as paged through for this import.",
+      "action": "Imported them from the tag pages, with the dates shown there."
+    },
+    {
+      "found": "Paging further through News and insights returns the latest articles again, so older articles are reachable only through topic tags.",
+      "action": "Rebuilt the archive from every topic tag page and removed duplicates by address."
+    },
+    {
+      "found": "Many items carry no topic tag at all, so they never appear when someone browses by topic.",
+      "action": "Kept them searchable by text and counted them in the quality report."
+    },
+    {
+      "found": "\"How prepared do we think we are?\" is listed under 24 February 2026, but its byline reads 24 February 2025, and it refers to a managing director appointed in January 2026.",
+      "action": "Used the listing date, which the content supports.",
+      "items": [
+        "how-prepared-do-we-think-we-are"
+      ]
+    },
+    {
+      "found": "The child poverty case study names the Ministry of Justice in its page metadata, while its text says the Department for Work and Pensions commissioned the work.",
+      "action": "Followed the text of the page.",
+      "items": [
+        "parents-and-carers-forum-informing-the-new-child-poverty-strategy"
+      ]
+    },
+    {
+      "found": "Two items are published under nested locale paths inside the global section (for example /case-studies/en-gb/case-studies/...), so one page has several addresses.",
+      "action": "Kept the address used by the global listing.",
+      "items": [
+        "parents-and-carers-forum-informing-the-new-child-poverty-strategy",
+        "verian-appoints-melanie-wiese-as-managing-director-australia"
+      ]
+    },
+    {
+      "found": "Tag pages show a \"No Posts Found\" message underneath their results.",
+      "action": "None needed; noted because it can make a populated topic look empty."
+    }
+  ]
+}

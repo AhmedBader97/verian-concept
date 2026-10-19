@@ -1,0 +1,498 @@
+.hero {
+  padding-top: calc(var(--header-h) + var(--space-8));
+  padding-bottom: var(--space-8);
+}
+.heroLede {
+  margin-top: var(--space-5);
+}
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+.kicker {
+  font-weight: 560;
+  color: var(--ink-2);
+  margin-bottom: var(--space-5);
+}
+.split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+.split > div {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+}
+.footnote {
+  margin-top: var(--space-6);
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}
+
+/* ---------- about ---------- */
+
+.purposeBand {
+  background: var(--ink);
+  color: var(--paper-raised);
+}
+.purpose {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: end;
+}
+.purposeList {
+  margin: 0;
+  display: grid;
+  gap: var(--space-3);
+}
+.purposeList li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 10px;
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  line-height: 1.45;
+  color: color-mix(in oklab, var(--paper-raised) 86%, transparent);
+}
+.purposeList li::before {
+  content: "";
+  width: 10px;
+  height: 9px;
+  margin-top: 0.55em;
+  background: var(--marigold);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.timeline {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid var(--ink);
+}
+.timeline li {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  padding: 0 0 var(--space-6) var(--space-6);
+}
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -6px;
+  top: 6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+}
+.timeline li:last-child::before {
+  background: var(--ink);
+}
+.when {
+  font-weight: 600;
+}
+.what {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  color: var(--ink-2);
+}
+.locationsBand {
+  background: var(--paper-sunk);
+  border-block: 1px solid var(--rule);
+}
+.locHead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: end;
+  margin-bottom: var(--space-7);
+}
+.mapFrame {
+  padding: var(--space-6);
+  border-radius: var(--r-sheet);
+  background: var(--paper-raised);
+  box-shadow: 0 0 0 1px var(--rule);
+  margin-bottom: var(--space-7);
+}
+.regions {
+  display: grid;
+  grid-template-columns: 1.6fr 1.2fr 0.8fr;
+  gap: var(--space-6);
+}
+.offices {
+  margin: var(--space-4) 0 0;
+  display: grid;
+  gap: var(--space-3);
+}
+.city {
+  display: block;
+  font-weight: 600;
+}
+.cityNote {
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+.addr {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+.moreLinks ul {
+  margin: var(--space-5) 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+.moreLinks a {
+  display: grid;
+  gap: var(--space-2);
+  height: 100%;
+  padding: var(--space-5);
+  border-radius: var(--r-panel);
+  background: var(--paper-raised);
+  box-shadow: 0 0 0 1px var(--rule);
+  text-decoration: none;
+}
+.moreLinks a:hover .moreTitle {
+  text-decoration: underline;
+}
+.moreTitle {
+  font-weight: 600;
+  font-size: var(--step-1);
+}
+.moreText {
+  font-family: var(--font-serif);
+  color: var(--ink-2);
+}
+
+/* ---------- careers ---------- */
+
+.roleBand {
+  background: var(--paper-sunk);
+  border-block: 1px solid var(--rule);
+}
+.roleHead {
+  display: grid;
+  gap: var(--space-4);
+  max-width: 900px;
+  margin-bottom: var(--space-8);
+}
+.roleKicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--viridian-ink);
+}
+.roleKicker::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--viridian);
+}
+.roleGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+}
+.doList {
+  margin: var(--space-4) 0 0;
+  border-top: 1px solid var(--ink);
+}
+.doList li {
+  display: grid;
+  gap: 6px;
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--rule);
+}
+.doTitle {
+  font-weight: 600;
+  font-size: var(--step-1);
+}
+.doBody {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.roleSide {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+}
+.lookList {
+  margin: 0 0 var(--space-4);
+  display: grid;
+  gap: var(--space-2);
+}
+.lookList li {
+  display: grid;
+  grid-template-columns: 16px 1fr;
+  gap: 8px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.lookList li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  margin-top: 0.55em;
+  border-radius: 50%;
+  background: var(--ink-3);
+}
+.pay {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+}
+.callout {
+  margin-top: var(--space-8);
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) auto;
+  gap: var(--space-6);
+  align-items: center;
+  padding: var(--space-6);
+  border-radius: var(--r-sheet);
+  background: var(--night);
+  color: var(--night-ink);
+}
+.calloutKicker {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--marigold-night);
+  margin-bottom: var(--space-2);
+}
+.calloutText {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--night-ink-2);
+  max-width: 64ch;
+}
+.calloutActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+.calloutActions :global(.btn) {
+  --btn-bg: var(--night-ink);
+  --btn-fg: var(--night);
+  --btn-bd: var(--night-ink);
+}
+.calloutActions :global(.btn--ghost) {
+  --btn-bg: transparent;
+  --btn-fg: var(--night-ink);
+  --btn-bd: var(--night-ink-3);
+}
+
+/* ---------- concept ---------- */
+
+.conceptIntro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-6);
+  align-items: end;
+  margin-top: var(--space-6);
+}
+.conceptIntro .heroActions {
+  margin-top: 0;
+}
+.mapTableWrap {
+  margin-top: var(--space-6);
+  overflow-x: auto;
+}
+.mapTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.mapTable th,
+.mapTable td {
+  padding: var(--space-4) var(--space-4) var(--space-4) 0;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--rule);
+}
+.mapTable thead th {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--ink);
+}
+.mapTable tbody th {
+  width: 34%;
+  font-weight: 560;
+  line-height: 1.4;
+}
+.mapTable td {
+  font-family: var(--font-serif);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.mapTable td:last-child {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  width: 22%;
+}
+.codePath {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-3);
+}
+.receiptsBand {
+  background: var(--night);
+  color: var(--night-ink);
+}
+.receiptsLede {
+  color: var(--night-ink-2);
+  margin-top: var(--space-3);
+}
+.receiptTiles {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-7) 0 0;
+}
+.receiptTiles div {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  padding: var(--space-5);
+  border-radius: var(--r-panel);
+  background: var(--night-2);
+  box-shadow: inset 0 0 0 1px var(--night-rule);
+}
+.receiptTiles dd {
+  margin: 0;
+  font-size: var(--step-5);
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  color: var(--night-ink);
+}
+.receiptTiles dt {
+  font-size: 0.875rem;
+  color: var(--night-ink-2);
+}
+.receiptNote {
+  margin-top: var(--space-6);
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--night-ink-2);
+  max-width: 76ch;
+}
+.realList {
+  margin: 0;
+  display: grid;
+  gap: var(--space-5);
+}
+.realList dt {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.realList dd {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.meBand {
+  background: var(--paper-sunk);
+  border-block: 1px solid var(--rule);
+}
+.cv {
+  margin: 0;
+  display: grid;
+  gap: var(--space-4);
+}
+.cv li {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.cv strong {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  color: var(--ink);
+}
+.closing {
+  display: grid;
+  justify-items: start;
+}
+.closingText {
+  font-size: var(--step-4);
+  font-weight: 540;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 22ch;
+}
+
+@media (max-width: 899px) {
+  .split,
+  .purpose,
+  .locHead,
+  .regions,
+  .roleGrid,
+  .callout,
+  .conceptIntro,
+  .receiptTiles {
+    grid-template-columns: 1fr;
+  }
+  .moreLinks ul {
+    grid-template-columns: 1fr;
+  }
+  .mapFrame {
+    padding: var(--space-3);
+  }
+  /* The mapping table becomes stacked cards on phones. */
+  .mapTable,
+  .mapTable tbody,
+  .mapTable tr,
+  .mapTable th,
+  .mapTable td {
+    display: block;
+    width: auto;
+  }
+  .mapTable thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+  .mapTable tr {
+    padding: var(--space-4) 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .mapTable th,
+  .mapTable td {
+    border: 0;
+    padding: 0 0 var(--space-3);
+  }
+  .mapTable tbody th,
+  .mapTable td:last-child {
+    width: auto;
+  }
+  .mapTable td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 2px;
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ink-3);
+  }
+}

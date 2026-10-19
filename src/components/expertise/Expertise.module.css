@@ -1,0 +1,307 @@
+.hero {
+  padding-top: calc(var(--header-h) + var(--space-8));
+  padding-bottom: var(--space-7);
+}
+.heroLede {
+  margin-top: var(--space-5);
+}
+.crumb {
+  margin-bottom: var(--space-4);
+  font-weight: 560;
+  color: var(--ink-2);
+}
+.crumb a {
+  text-decoration: none;
+}
+
+/* ---------- policy cycle ---------- */
+
+.cycleBand {
+  padding-block: var(--space-8);
+  background: var(--paper-sunk);
+  border-block: 1px solid var(--rule);
+}
+.cycle {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: center;
+}
+.cycleSvg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+.cycleCenter {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  fill: var(--ink);
+}
+.cycleCenterSub {
+  font-family: var(--font-serif);
+  font-size: 16px;
+  fill: var(--ink-2);
+}
+.stageNode circle {
+  fill: var(--paper-raised);
+  stroke: var(--ink-3);
+  stroke-width: 1.2;
+  transition:
+    fill var(--dur-base) var(--ease-out),
+    stroke var(--dur-base) var(--ease-out);
+}
+.stageNode text {
+  font-size: 13px;
+  font-weight: 560;
+  fill: var(--ink);
+  pointer-events: none;
+  transition: fill var(--dur-base) var(--ease-out);
+}
+.stageNode[data-lit="true"] circle {
+  fill: var(--ink);
+  stroke: var(--ink);
+}
+.stageNode[data-lit="true"] text {
+  fill: var(--paper-raised);
+}
+.cycleSide {
+  display: grid;
+  gap: var(--space-5);
+}
+.cycleHint {
+  min-height: 3.2em;
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+.cycleAreas {
+  margin: 0;
+  border-top: 1px solid var(--ink);
+}
+.cycleAreas li {
+  border-bottom: 1px solid var(--rule);
+}
+.cycleArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-2);
+  font-size: var(--step-2);
+  font-weight: 540;
+  letter-spacing: -0.015em;
+  text-decoration: none;
+  border-radius: var(--r-control);
+  transition:
+    opacity var(--dur-base) var(--ease-out),
+    background-color var(--dur-base) var(--ease-out);
+}
+.cycleArea:hover,
+.cycleArea:focus-visible {
+  background: var(--paper-raised);
+}
+.cycleArea[data-dim="true"] {
+  opacity: 0.32;
+}
+.cycleDots {
+  display: inline-flex;
+  gap: 8px;
+}
+.cycleDots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--ink-3);
+}
+.cycleDots span[data-on="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+/* ---------- areas list ---------- */
+
+.areas {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+  margin: 0;
+}
+.area {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  height: 100%;
+  padding: var(--space-6);
+  border-radius: var(--r-panel);
+  background: var(--paper-raised);
+  box-shadow: 0 0 0 1px var(--rule);
+  text-decoration: none;
+  transition: box-shadow var(--dur-base) var(--ease-out);
+}
+.area:hover {
+  box-shadow:
+    0 0 0 1px var(--rule-strong),
+    0 22px 40px -30px rgb(22 32 43 / 0.45);
+}
+.area p {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--ink-2);
+}
+.more {
+  margin-top: var(--space-2);
+  font-size: 0.875rem;
+  font-weight: 560;
+  color: var(--cobalt-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+  text-decoration-color: color-mix(in oklab, var(--cobalt) 40%, transparent);
+}
+.centres {
+  margin-top: var(--space-8);
+  padding-top: var(--space-5);
+  border-top: 1px solid var(--rule);
+  display: grid;
+  gap: var(--space-2);
+  max-width: 70ch;
+}
+.centres p {
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  color: var(--ink-2);
+}
+
+/* ---------- detail ---------- */
+
+.stagesLine {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: var(--space-5);
+  font-size: 0.875rem;
+  color: var(--ink-2);
+}
+.stagePill {
+  padding: 4px 12px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--rule-strong);
+  color: var(--ink-3);
+}
+.stagePill[data-on="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-raised);
+}
+.detail {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+.detailMain {
+  display: grid;
+  gap: var(--space-5);
+}
+.subhead {
+  margin-top: var(--space-4);
+}
+.services,
+.facts {
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.services li,
+.facts li {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 10px;
+  font-family: var(--font-serif);
+  font-size: var(--step-1);
+  line-height: 1.5;
+}
+.services li::before,
+.facts li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  margin-top: 0.6em;
+  background: var(--ink);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.facts li::before {
+  background: var(--marigold);
+}
+.source {
+  font-size: var(--step--1);
+  color: var(--ink-2);
+}
+.detailSide {
+  display: grid;
+  gap: var(--space-4);
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
+}
+.related {
+  margin: 0;
+  display: grid;
+}
+.related li {
+  border-bottom: 1px solid var(--rule);
+}
+.related a {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-3) 0;
+  text-decoration: none;
+}
+.related a > span {
+  display: grid;
+  gap: 4px;
+}
+.relatedTitle {
+  font-weight: 540;
+  line-height: 1.3;
+}
+.related a:hover .relatedTitle {
+  text-decoration: underline;
+}
+.relatedMeta {
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+.othersBand {
+  background: var(--paper-sunk);
+  border-top: 1px solid var(--rule);
+}
+.others {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-6);
+  margin: var(--space-5) 0 0;
+  font-size: var(--step-2);
+  font-weight: 540;
+}
+.others a {
+  text-decoration: none;
+}
+
+@media (max-width: 899px) {
+  .cycle,
+  .detail,
+  .areas {
+    grid-template-columns: 1fr;
+  }
+  .cycleSvg {
+    max-width: 360px;
+    margin-inline: auto;
+  }
+  .detailSide {
+    position: static;
+  }
+}

@@ -1,0 +1,275 @@
+.world {
+  position: relative;
+  z-index: 1;
+  height: 210vh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.head {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding-top: calc(var(--header-h) + var(--space-5));
+}
+.headText {
+  max-width: 34rem;
+  display: grid;
+  gap: var(--space-3);
+}
+.stat {
+  font-family: var(--font-serif);
+  font-size: var(--step-2);
+  color: var(--ink-2);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+.chip {
+  min-height: 38px;
+  padding: 0 16px;
+  border-radius: var(--r-pill);
+  border: 1px solid var(--ink-3);
+  background: transparent;
+  font-size: 0.875rem;
+  font-weight: 520;
+  transition:
+    background-color var(--dur-quick) var(--ease-out),
+    color var(--dur-quick) var(--ease-out);
+}
+.chip:hover {
+  background: color-mix(in oklab, var(--ink) 6%, transparent);
+}
+.chip[aria-pressed="true"] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-raised);
+}
+
+.static {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.markers {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  margin: 0;
+  pointer-events: none;
+}
+.marker {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  transition:
+    transform 1400ms var(--ease-in-out),
+    opacity 500ms var(--ease-out);
+}
+.marker[data-hidden="true"] {
+  opacity: 0;
+}
+.marker[data-hidden="true"] .pin,
+.marker[data-interactive="false"] .pin {
+  pointer-events: none;
+}
+.pin {
+  position: absolute;
+  left: -14px;
+  top: -14px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  pointer-events: auto;
+}
+.pin::before,
+.pin::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+.pin::before {
+  width: 10px;
+  height: 10px;
+  background: var(--marigold);
+  box-shadow: 0 0 0 2px var(--paper);
+}
+.pin::after {
+  width: 10px;
+  height: 10px;
+  border: 1.5px solid var(--marigold);
+  animation: ping 2.8s var(--ease-out) infinite;
+  animation-delay: var(--delay, 0s);
+}
+.marker[data-focus="true"] .pin::before {
+  background: var(--ink);
+  width: 14px;
+  height: 14px;
+}
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  70%,
+  100% {
+    transform: scale(2.8);
+    opacity: 0;
+  }
+}
+
+.foot {
+  position: absolute;
+  inset: auto 0 0 0;
+  z-index: 3;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 84px; /* clears the concept label pinned bottom-left */
+  pointer-events: none;
+}
+.foot > * {
+  pointer-events: auto;
+}
+
+.card {
+  width: min(360px, 100%);
+  padding: var(--space-4) var(--space-5) var(--space-4);
+  border-radius: var(--r-panel);
+  background: color-mix(in oklab, var(--paper-raised) 90%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 0 0 1px var(--rule);
+}
+.cardInfo {
+  min-height: 66px;
+  padding-bottom: var(--space-3);
+  margin-bottom: var(--space-3);
+  border-bottom: 1px solid var(--rule);
+}
+.cardCity {
+  font-size: var(--step-3);
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.cardNote {
+  font-size: var(--step--1);
+  font-weight: 500;
+  color: var(--ink-2);
+}
+.cardMeta {
+  color: var(--ink-2);
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-1);
+}
+.cardAddr {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.45;
+}
+.cardHint {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--ink-2);
+}
+
+.listToggle {
+  border: 0;
+  background: transparent;
+  padding: 2px 0;
+  margin-bottom: var(--space-2);
+  font-size: 0.8125rem;
+  font-weight: 560;
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--rule-strong);
+}
+.list {
+  display: none;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin: 0 0 var(--space-3) -8px;
+}
+.list[data-open="true"] {
+  display: flex;
+}
+.listItem {
+  border: 0;
+  background: transparent;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  color: var(--ink-2);
+}
+.listItem[data-focus="true"],
+.listItem:hover {
+  color: var(--ink);
+  background: color-mix(in oklab, var(--marigold) 24%, transparent);
+}
+.listLink {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.8125rem;
+  color: var(--cobalt-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+@media (max-width: 899px) {
+  .world {
+    height: 180vh;
+  }
+  .stat {
+    font-size: var(--step-1);
+  }
+  .foot {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-3);
+    padding-bottom: 72px;
+  }
+  .card {
+    width: 100%;
+  }
+  .cardInfo {
+    min-height: 0;
+  }
+  .listToggle {
+    display: none;
+  }
+  .list {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    margin-right: calc(var(--space-5) * -1);
+    padding-right: var(--space-5);
+  }
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+  .listItem {
+    white-space: nowrap;
+  }
+}

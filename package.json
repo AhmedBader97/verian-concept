@@ -1,0 +1,57 @@
+{
+  "name": "verian-concept",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Unofficial redesign concept of veriangroup.com by Ahmed Bader, built for the Junior AI Engineer / Forward Deployed Engineer application.",
+  "author": "Ahmed Bader",
+  "license": "UNLICENSED",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "data": "python3 -m pipeline.build && node scripts/world-dots.mjs",
+    "build": "next build",
+    "start": "serve out -l 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:py": "python3 -m pytest -q pipeline/tests mcp_server/tests",
+    "e2e": "playwright test",
+    "check": "npm run typecheck && npm test && npm run test:py && npm run build && npm run e2e",
+    "receipts": "vitest run --reporter=json --outputFile=test-results/vitest.json && python3 -m pytest -q pipeline/tests mcp_server/tests --junitxml=test-results/pytest.xml && next build && playwright test --reporter=json > test-results/e2e.json && node scripts/lighthouse.mjs / /lab/ && tsx scripts/receipts.mts && next build"
+  },
+  "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "5.3.0",
+    "@fontsource-variable/schibsted-grotesk": "5.3.0",
+    "@fontsource/spectral": "5.3.0",
+    "@gsap/react": "2.1.2",
+    "@vercel/analytics": "2.0.1",
+    "d3-force": "3.0.0",
+    "gsap": "3.15.0",
+    "lenis": "1.3.27",
+    "next": "16.4.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@playwright/test": "1.56.1",
+    "@types/d3-force": "3.0.10",
+    "@types/d3-geo": "3.1.1",
+    "@types/node": "22.20.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/three": "0.186.0",
+    "@types/topojson-client": "3.1.5",
+    "d3-geo": "3.1.1",
+    "lighthouse": "13.5.0",
+    "serve": "14.2.6",
+    "topojson-client": "3.1.0",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "5.0.5",
+    "world-atlas": "2.0.2"
+  }
+}
