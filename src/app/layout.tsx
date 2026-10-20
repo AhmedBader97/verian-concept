@@ -17,21 +17,21 @@ import { SmoothScroll } from "@/components/site/SmoothScroll";
 export const metadata: Metadata = {
   metadataBase: new URL("https://verian-concept.vercel.app"),
   title: {
-    default: "Verian — a redesign concept by Ahmed Bader",
-    template: "%s — Verian concept",
+    default: "Verian redesign concept by Ahmed Bader",
+    template: "%s | Verian concept",
   },
   description:
     "An unofficial redesign of veriangroup.com with a live, auditable research assistant. Built by Ahmed Bader for the Junior AI Engineer / Forward Deployed Engineer role.",
   robots: { index: false, follow: false },
   openGraph: {
-    title: "Verian — a redesign concept",
+    title: "Verian redesign concept",
     description: "An unofficial redesign of veriangroup.com with a live, auditable research assistant, by Ahmed Bader.",
     type: "website",
     images: [{ url: "/og.png", width: 1200, height: 630, alt: "Verian redesign concept: a ternary field of points beside the headline" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Verian — a redesign concept",
+    title: "Verian redesign concept",
     description: "An unofficial redesign of veriangroup.com with a live, auditable research assistant, by Ahmed Bader.",
     images: ["/og.png"],
   },
