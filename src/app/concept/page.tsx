@@ -239,23 +239,23 @@ export default function ConceptPage() {
           </h2>
           <ul role="list" className={styles.cv}>
             <li>
-              <strong>Telephone interviewer, IFF Research.</strong> I run CATI surveys, including graduate outcomes research
-              for universities, so I know fieldwork from the interviewer&rsquo;s side of the call.
+              <strong>Timelex, founder, since 2024.</strong> An AI time-tracking product for law firms, at{" "}
+              <a className="link" href="https://timelex.ai" target="_blank" rel="noreferrer">
+                timelex.ai
+              </a>
+              . A Windows agent and a browser extension record what a lawyer works on; the Claude Haiku API works out which
+              client matter it belongs to, ignores anything unrelated to the job, and writes the timesheet narrative for the
+              lawyer to approve.
             </li>
             <li>
-              <strong>AI voice interviewer, my own company, since 2025.</strong> A telephone interviewer for market research
-              with a custom text-to-speech voice and the Claude API as a live reasoning layer that hands back to a human when
-              its confidence is low.
+              <strong>AI voice interviewer, my own company, since 2025.</strong> An AI interviewer for market-research phone
+              surveys, with a custom text-to-speech voice and the Claude API as a live reasoning layer that hands back to a
+              human when its confidence is low. Now in testing and being developed for production.
             </li>
             <li>
               <strong>ContentBlur.</strong> A real-time video filter built on a multi-model computer vision pipeline. I am
               building its own segmentation model from a curated corpus of around 60,000 frames, with blind-reviewed ground
               truth, sealed predictions before every experiment, and a failing test written before every fix.
-            </li>
-            <li>
-              <strong>Timelex, founder, since 2024.</strong> An AI time-tracking product for law firms: Windows agent,
-              ASP.NET Core API, React dashboard, browser extension and Clio integration, with LLM-written timesheet
-              narratives.
             </li>
             <li>
               <strong>Graduate developer, Numatic International.</strong> UI and backend for an autonomous robot vacuum that

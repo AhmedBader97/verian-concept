@@ -90,7 +90,7 @@ export default function CareersPage() {
                 ))}
               </ul>
               <h3 className="h4">Pay and benefits</h3>
-              <p className={styles.pay}>GBP 1,600 to 2,500 gross per month, depending on qualifications and experience.</p>
+              <p className={styles.pay}>EUR 1,800 to 2,800 gross per month, depending on qualifications and experience.</p>
               <ul role="list" className={styles.lookList}>
                 {PERKS.map((p) => (
                   <li key={p}>{p}</li>
